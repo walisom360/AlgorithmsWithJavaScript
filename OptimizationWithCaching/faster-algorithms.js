@@ -5,7 +5,7 @@ const isUnique = (arr) => {
     console.log(`~~~~~~ OUTER LOOP i === ${i}`);
 
     for (let j = 0; j < arr.length; j++) {
-      console.log(`~~~~~~ INNER LOOP i === ${j}`);
+      console.log(`~~~~~~ INNER LOOP j === ${j}`);
 
       if (i !== j && arr[i] === arr[j]) {
         result = false;
@@ -17,4 +17,3 @@ const isUnique = (arr) => {
 };
 
 console.log(isUnique([1, 2, 3]) === true);
-console.log(isUnique([1, 2, 3]) === false);
