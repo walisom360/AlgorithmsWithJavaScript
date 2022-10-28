@@ -7,7 +7,13 @@
 const uniqSort = function (arr) {
   const breadcrumbs = {};
 
+  for (let i = 0; i < arr.length; i++) {
+    breadcrumbs[arr[i]] = arr[i];
+  }
+
+  console.log(breadcrumbs);
+
   return arr.sort((a, b) => a - b);
 };
 
-uniqSort([4, 2, 2, 3, 2, 2, 2]); // => [2,3,4]
+console.log(uniqSort([4, 2, 2, 3, 2, 2, 2])); // => [2,3,4]
