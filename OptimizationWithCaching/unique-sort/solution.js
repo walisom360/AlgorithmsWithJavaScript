@@ -18,6 +18,9 @@ const uniqSort = function (arr) {
     }
   }
 
+  // marked object key with same value for position array
+  console.log("breadcrumbs", breadcrumbs);
+
   return result.sort((a, b) => a - b);
 };
 
